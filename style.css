@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+html,body
+{
+width:100%;
+height:100%;
+text-align: center;
+}
+html{
+  font-size: 62.5%;
+}
+h1{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: black;
+  padding:20px 0px;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+form #search-input{
+  width:30%;
+  font-size: 1.8rem;
+  padding:  10px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+}
+form #search-btn{
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: green;
+  border-radius: 2px;
+}
+.search-items{
+  margin-top: 40px;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.search-items .search-item{
+  /* margin: 0 auto; */
+  width:calc(100% / 3.5);
+  
+  /* background-color: #fff; */
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.search-items .search-item img{
+  width:100%;
+  max-height: 400px;
+  object-fit: cover;
+  transition: opacity 0.2s ease-out;
+  /* height:100%; */
+}
+.search-item:hover img{
+  opacity: 0.8;
+}
+.search-items .search-item a{
+  text-decoration: none;
+  color:black;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+#show-more-btn{
+  margin-top: 50px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgb(102, 255, 0);
+  margin-bottom: 2px;
+  display: none;
+  text-align: center;
+}
+@media  screen and (max-width:600px){
+  html{
+    font-size: 50%;
+  }
+  form{
+    flex-direction: column;
+  }
+  form #search-input{
+    width:80%;
+  }
+  .search-items{
+    flex-direction: column;
+  }
+  .search-items .search-item{
+    /* margin: 0 auto; */
+    padding: 5px;
+    width:100%;
+  }
+}
