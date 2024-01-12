@@ -1,6 +1,7 @@
 #Image Search Project
 
-[![Project Preview])](https://goyalvansh4.github.io/Search-Image-App/)
+[![Project Preview](https://github.com/goyalvansh4/Search-Image-App/blob/main/projectPreview.png)](https://goyalvansh4.github.io/Search-Image-App/)
+
 
 
 #Overview
